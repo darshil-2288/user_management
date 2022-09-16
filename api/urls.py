@@ -1,9 +1,12 @@
 from django.urls import path
-from .views import UserRegistrationAPIView,UserLoginAPIView,create_profile,detail_view
+from . import views
+from rest_framework.authtoken import views as auth_views
 urlpatterns = [
-  path('api/register/',UserRegistrationAPIView.as_view()),
-  path('api/login/',UserLoginAPIView.as_view()),
-  path("api/profilecreate/",create_profile,name="profile_create"),
-  path('api/<str:pk>/',detail_view,name="detail_view")
+		path('api/register/',views.UserRegistrationAPIView.as_view()),
+		path('api/login/',views.UserLoginAPIView.as_view()),
+		path('api/create-profile/',views.create_profile),
+		path('api/profiles/<str:pk>/',views.detail_view),
+		path('api-token-auth/',auth_views.obtain_auth_token)
+  
 ]
 
