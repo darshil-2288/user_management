@@ -1,6 +1,6 @@
 PROJECT MANAGEMENT SYSTEM USING DJANGO
 
-project description: this django project include two app i.e. API & USER_APP .
+project description: this django project include two app , API & USER_APP .
                      USER_APP include views.py, one models , signals file for create instance user &  forms.py file  which have three forms i.e login form,register
                      form ,updateuserform & updateprofile form.
                      API app: this app i create for build api for this user management project. the app include  four apis . register api,login api,createprofile api,
