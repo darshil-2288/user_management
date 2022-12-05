@@ -12,7 +12,7 @@ project description: this django project include two app , API & USER_APP .
                     by installing this project in your device you can use this project as a basic user management system like registration, login, create profile of the user
                     and update and delete profile.
                     also this project have apis for all funcnalities and you can use all the apis where you want . by use of the apis you can create user managemnet system with use of 
-                    any frontent technlogies.
+                    any frontend technlogies.
                     
                     
                     
